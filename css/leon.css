@@ -1,5 +1,7 @@
 /*===> start variables ===>*/
-
+    :root{
+        --main-color:#10cab7;
+    }
 /*end variables*/
 
 /*===>start global rules<===*/
@@ -68,6 +70,7 @@ body{
     position: absolute;
     top: calc(100% + 15px);
     right: 0px;
+    z-index: 2;
     display: none;
 }
 .drop::after{
@@ -98,3 +101,36 @@ body{
     display: block;
 }
 /* ===>starting landing section<=== */
+.landing{
+    /* width: 100%; */
+    height:calc(100vh - 64px);
+    background-image: url(../images/background-landing.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.landing .intro-text{
+    width: 320px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.landing .intro-text h1{
+    margin: 0;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 50px;
+    -webkit-text-stroke:1px  #ddd;
+}
+.landing .intro-text p{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.8;
+    -webkit-text-stroke:0.5px #ddd;
+}
