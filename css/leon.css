@@ -11,3 +11,89 @@
 body{
     font-family: 'Work Sans', sans-serif;;
 }
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*==>end global roles <===*/
+/*====>start header styling<====*/
+.header{
+    padding: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo{
+    width: 60px;
+}
+.container .links{
+    position: relative;
+}
+.links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.links .icon span:first-child{
+    width: 100%;
+}
+.links .icon span:nth-child(2){
+    width: 60%;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.links .icon:hover  span:nth-child(2){
+    width: 100%;
+}
+.links .icon span:nth-child(3){
+    width: 100%;
+}
+.links .drop{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 0px;
+    display: none;
+}
+.drop::after{
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    top: -19px;
+    right: 5px;
+}
+.drop li a{
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    transition-property: padding;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+.drop li a:hover{
+    padding-left: 25px;
+}
+.drop li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+.links:hover .drop{
+    display: block;
+}
