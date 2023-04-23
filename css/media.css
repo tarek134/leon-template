@@ -1,8 +1,17 @@
-@media (min-width:576px){
+@media (max-width:767px){
+    .special-heading{
+        font-size: 60px;
+    }
+    .special-para{
+        font-size: 14px;
+        margin-top: -34px;
+    }
+}
+/* @media (min-width:576px){
     .container{
         width: 576px;
     }
-}
+} */
 @media (min-width:768px){
     .container{
         width:768px;
