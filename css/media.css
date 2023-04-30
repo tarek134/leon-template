@@ -17,11 +17,14 @@
         transition-timing-function: ease-in;
     }
 }
-/* @media (min-width:576px){
-    .container{
-        width: 576px;
+@media (max-width:991px){
+    .about .about-content{
+        flex-direction: column;
     }
-} */
+    .about .about-content .text-about{
+        padding: 0px;
+    }
+}
 @media (min-width:768px){
     .container{
         width:750px;
