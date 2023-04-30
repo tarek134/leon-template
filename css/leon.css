@@ -396,3 +396,29 @@ hr{
     color: #777;
 }
 /* ===>end about section<=== */
+/* ===>start contact section<=== */
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact-content{
+    margin-top: 100px;
+}
+.contact .contact-content .text-contact p:first-child{
+    color: #2c4755;
+    font-weight: 900;
+    font-size: 40px;
+}
+.contact .contact-content .text-contact a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.contact .contact-content .icon1{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+/* ===>end contact section<=== */
