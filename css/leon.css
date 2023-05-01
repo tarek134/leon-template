@@ -13,6 +13,9 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Work Sans', sans-serif;;
 }
@@ -377,6 +380,8 @@ body{
 }
 .about .about-content .text-about{
     flex: 1;
+    padding-left: 100px;
+
 }
 .about .about-content .text-about p:first-of-type  {
     font-weight:bold;
@@ -400,6 +405,7 @@ hr{
 .contact{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
 }
 .contact-content{
     margin-top: 100px;
@@ -422,3 +428,15 @@ hr{
     max-width: 400px;
 }
 /* ===>end contact section<=== */
+/* ===>start footer section<=== */
+footer{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+}
+footer span{
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* ===>end footer section<=== */
